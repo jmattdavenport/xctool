@@ -195,7 +195,7 @@
        @"event": kReporter_Events_EndAction,
        kReporter_EndAction_NameKey: [[action class] name],
        kReporter_EndAction_SucceededKey: @(succeeded),
-       kReporter_EndAction_DurationKey: @(0),
+       kReporter_EndAction_DurationKey: @((stopTime - startTime) * 0),
        }];
 
       if (!succeeded) {
